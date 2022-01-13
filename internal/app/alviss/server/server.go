@@ -10,10 +10,6 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-var (
-	ServerPort string
-)
-
 func RunServer(port string) {
 	fmt.Println("Server is running on port " + port)
 	// sleep for a while to wait for the database to be ready
