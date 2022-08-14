@@ -11,7 +11,7 @@ import (
 
 // initialize the database using postgres
 const (
-	DB_HOST     = "db"
+	DB_HOST     = "10.184.0.4"
 	DB_PORT     = "5432"
 	DB_USER     = "postgres"
 	DB_PASSWORD = "postgres"
@@ -20,7 +20,7 @@ const (
 
 // initialaize the redis client
 const (
-	REDIS_HOST     = "redis"
+	REDIS_HOST     = "10.184.0.4"
 	REDIS_PORT     = "6379"
 	REDIS_PASSWORD = ""
 )
