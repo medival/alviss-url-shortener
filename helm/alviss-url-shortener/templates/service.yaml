@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "alviss-url-shortener.fullname" . }}
+  labels: {{ include "alviss-url-shortener.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector: {{ include "alviss-url-shortener.selectorLabels" . | nindent 4 }}
