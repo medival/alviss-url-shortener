@@ -10,5 +10,4 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
-      nodePort: {{ .Values.service.nodePort }}
   selector: {{ include "alviss-url-shortener.selectorLabels" . | nindent 4 }}
